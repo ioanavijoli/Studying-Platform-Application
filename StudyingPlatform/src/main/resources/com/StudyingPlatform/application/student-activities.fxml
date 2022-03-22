@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="423.0" style="-fx-pref-width: 350; -fx-pref-height: 135;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.StudentActivitiesController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="423.0" style="-fx-pref-height: 20;">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" style="-fx-pref-width: 50;" />
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="126.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label text="Day" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="67.0" prefWidth="101.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label text="Starts at:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="142.0" layoutY="10.0" prefHeight="67.0" prefWidth="66.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label text="Ends at:" />
+               </children>
+            </HBox>
+            <Region layoutX="40.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-pref-width: 60;" />
+         </children>
+      </HBox>
+      <HBox fx:id="lectureHbox" alignment="CENTER" prefHeight="44.0" prefWidth="600.0" style="-fx-pref-height: 28;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="74.0" style="-fx-pref-width: 50;">
+               <children>
+                  <Label text="Lecture" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="97.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="lectureDay" text="&lt;day&gt;" />
+               </children>
+            </HBox>
+            <HBox fx:id="startLabel" alignment="CENTER" layoutX="69.0" layoutY="10.0" prefHeight="30.0" prefWidth="63.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="lectureStarts" text="&lt;h1&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="167.0" layoutY="10.0" prefHeight="35.0" prefWidth="65.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="lectureEnds" text="&lt;h2&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="80.0" style="-fx-pref-width: 60;">
+               <children>
+                  <Button fx:id="lectureJoin" mnemonicParsing="false" onAction="#onLectureJoinButton" style="-fx-pref-height: 20; -fx-pref-width: 45;" text="Join" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="300.0" style="-fx-pref-height: 28;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="76.0" style="-fx-pref-width: 50;">
+               <children>
+                  <Label text="Seminar" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="97.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="seminarDay" text="&lt;day&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="69.0" layoutY="10.0" prefHeight="30.0" prefWidth="63.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="seminarStarts" text="&lt;h1&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="167.0" layoutY="10.0" prefHeight="35.0" prefWidth="65.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="seminarEnds" text="&lt;h2&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="80.0" style="-fx-pref-width: 60;">
+               <children>
+                  <Button fx:id="seminarJoin" mnemonicParsing="false" onAction="#onSeminarJoinButton" style="-fx-pref-height: 20; -fx-pref-width: 45;" text="Join" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-pref-height: 28;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="76.0" style="-fx-pref-width: 50;">
+               <children>
+                  <Label text="Lab" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="97.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="labDay" text="&lt;day&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="69.0" layoutY="10.0" prefHeight="30.0" prefWidth="63.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="labStarts" text="&lt;h1&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="167.0" layoutY="10.0" prefHeight="35.0" prefWidth="65.0" style="-fx-pref-width: 80;">
+               <children>
+                  <Label fx:id="labEnds" text="&lt;h2&gt;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="80.0" style="-fx-pref-width: 60;">
+               <children>
+                  <Button fx:id="labJoin" mnemonicParsing="false" onAction="#onLabJoinButton" style="-fx-pref-height: 20; -fx-pref-width: 45;" text="Join" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="380.0" style="-fx-pref-height: 31;">
+         <children>
+            <VBox alignment="CENTER" focusTraversable="true">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onBackButton" prefHeight="14.0" prefWidth="74.0" style="-fx-pref-width: 90; -fx-pref-height: 20;" text="close" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

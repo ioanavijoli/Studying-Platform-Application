@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.MessageController">
+   <children>
+      <Region layoutX="350.0" layoutY="10.0" style="-fx-min-width: 2;" />
+      <VBox fx:id="bigBox" style="-fx-max-width: 330; -fx-min-width: 330;">
+         <children>
+            <VBox fx:id="smallBox" style="-fx-max-width: 200; -fx-min-width: 200;">
+               <children>
+                  <Label fx:id="usernameLabel" style="-fx-min-width: 200;" text="username:" textFill="#848484">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="message" alignment="TOP_LEFT" style="-fx-min-width: 200;" wrapText="true" />
+               </children>
+            </VBox>
+            <Region prefHeight="5.0" prefWidth="200.0" style="-fx-min-height: 2;" />
+         </children>
+      </VBox>
+      <Region style="-fx-min-width: 2;" />
+   </children>
+</HBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.SubjectListRowController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="242.0">
+         <children>
+            <Label fx:id="courseNameLabel" alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="226.0" text="CourseName" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="177.0" layoutY="10.0" prefHeight="35.0" prefWidth="134.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onViewButtonClick" prefHeight="25.0" prefWidth="81.0" text="view" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

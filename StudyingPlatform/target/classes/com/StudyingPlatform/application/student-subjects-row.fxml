@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.StudentSubjectsRowController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="107.0" style="-fx-pref-width: 135;">
+         <children>
+            <Label fx:id="subjectLabel" alignment="CENTER" contentDisplay="CENTER" text="&lt;Course Name&gt;" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="107.0" style="-fx-pref-width: 100;">
+         <children>
+            <Button fx:id="firstButton" mnemonicParsing="false" onAction="#onFirstButtonClick" style="-fx-pref-height: 30; -fx-pref-width: 90;" text="&lt;Activ|join&gt;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="117.0" layoutY="10.0" prefHeight="56.0" prefWidth="107.0" style="-fx-pref-width: 100;">
+         <children>
+            <Button fx:id="secondButton" mnemonicParsing="false" onAction="#onSecondButtonClick" style="-fx-pref-height: 30; -fx-pref-width: 90;" text="&lt;Grds|view&gt;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="217.0" layoutY="10.0" prefHeight="56.0" prefWidth="107.0" style="-fx-pref-width: 100;">
+         <children>
+            <MenuButton fx:id="moreButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-pref-height: 30; -fx-pref-width: 90;" text="More">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onViewButtonClick" text="view" />
+                <MenuItem mnemonicParsing="false" onAction="#onQuitButtonClick" text="quit" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+   </children>
+</HBox>

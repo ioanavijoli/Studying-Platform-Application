@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.AssignProfessorToSubjectRowController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="23.0">
+         <children>
+            <Label fx:id="idLabel" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="137.0" text="id:" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="215.0">
+         <children>
+            <Label fx:id="nameLabel" alignment="BASELINE_LEFT" prefHeight="17.0" prefWidth="209.0" text="Course Name:" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="53.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSelectButtonClick" opacity="0.75" text="select" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

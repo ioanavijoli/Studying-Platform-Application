@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="501.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.ChatController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="501.0" prefWidth="180.0" style="-fx-pref-width: 190;">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" style="-fx-pref-height: 75; -fx-background-color: #E8E8E8;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Inbox">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="247.0" prefWidth="180.0" style="-fx-pref-height: 345;">
+               <children>
+                  <ScrollPane prefHeight="343.0" prefWidth="169.0">
+                     <content>
+                        <VBox fx:id="groupsVBox" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="180.0" style="-fx-pref-height: 40;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onCreateButtonClick" prefHeight="40.0" prefWidth="154.0" style="-fx-pref-height: 30;" text="Create Group" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="180.0" style="-fx-pref-height: 40;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="0.0" prefWidth="154.0" style="-fx-pref-height: 30;" text="Back" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="501.0" prefWidth="225.0" style="-fx-pref-width: 360;">
+         <children>
+            <HBox style="-fx-background-color: #e8e8e8;">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" style="-fx-pref-width: 280;">
+                     <children>
+                        <Label fx:id="groupNameLabel" alignment="BOTTOM_CENTER" style="pref: 75;" text="&lt;Group name&gt;">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="74.0" prefWidth="102.0" style="-fx-pref-width: 80;">
+                     <children>
+                        <SplitMenuButton mnemonicParsing="false" prefHeight="31.0" prefWidth="70.0" style="-fx-pref-height: 30;" text="more">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#onAddActivityClick" text="Add Activity" />
+                            <MenuItem fx:id="viewMembers" mnemonicParsing="false" onAction="#onViewMembersClick" text="View Members" />
+                            <MenuItem fx:id="leaveGroup" mnemonicParsing="false" onAction="#onLeaveGroupClick" text="Leave Group" />
+                          </items>
+                        </SplitMenuButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="366.0" prefWidth="370.0" style="-fx-pref-height: 345;">
+               <children>
+                  <ScrollPane fx:id="messageScroll" prefHeight="366.0" prefWidth="350.0" style="-fx-background-color: #E8E8E8;">
+                     <content>
+                        <VBox fx:id="messageVBox" style="-fx-background-color: #F3F3F3;" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="91.0" prefWidth="370.0" style="-fx-pref-height: 80;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="289.0">
+                     <children>
+                        <TextField fx:id="messageTextField" prefHeight="40.0" prefWidth="293.0" style="-fx-pref-height: 30;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="49.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onSendButtonClick" prefHeight="46.0" prefWidth="45.0" style="-fx-pref-height: 30;" text="Send" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

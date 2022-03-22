@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="54.0" prefWidth="383.0" style="-fx-pref-height: 45;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.TodayRowController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="104.0">
+         <children>
+            <Label fx:id="hourLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="93.0" text="6:00 - 7:00">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <VBox fx:id="supportBlock" prefWidth="243.0" style="-fx-pref-height: 45;">
+         <children>
+            <VBox fx:id="block" alignment="CENTER" prefHeight="45.0" prefWidth="243.0" style="-fx-background-color: #f8d1d1; -fx-pref-height: 45;" visible="false">
+               <children>
+                  <Label fx:id="titleLabel" alignment="TOP_LEFT" prefHeight="36.0" prefWidth="202.0" text="Title" visible="false" wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

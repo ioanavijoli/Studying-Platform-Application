@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" style="-fx-pref-height: 40; -fx-pref-width: 375;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.ProfessorGradesStudentRowController">
+   <children>
+      <HBox alignment="CENTER" style="-fx-pref-width: 75;">
+         <children>
+            <Label fx:id="firstNameLabel" text="&lt;First Name&gt;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" style="-fx-pref-width: 75;">
+         <children>
+            <Label fx:id="lastNameLabel" text="&lt;Last Name&gt;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="100.0" layoutY="10.0" style="-fx-pref-width: 75;">
+         <children>
+            <TextField fx:id="lectureTextField" alignment="CENTER" prefWidth="58.0" promptText="Lect" style="-fx-pref-height: 30; -fx-pref-width: 50;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="190.0" layoutY="10.0" style="-fx-pref-width: 75;">
+         <children>
+            <TextField fx:id="seminarTextField" alignment="CENTER" prefWidth="58.0" promptText="Semi" style="-fx-pref-height: 30; -fx-pref-width: 50;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="243.0" layoutY="10.0" style="-fx-pref-width: 75;">
+         <children>
+            <TextField fx:id="labTextField" alignment="CENTER" prefWidth="58.0" promptText="Lab" style="-fx-pref-height: 30; -fx-pref-width: 50;" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

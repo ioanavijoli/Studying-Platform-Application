@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" onMousePressed="#onMousePressed" prefHeight="33.0" prefWidth="202.0" style="-fx-min-height: 40; -fx-pref-width: 180;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.ProfessorGradesSubjectRowController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="202.0">
+         <children>
+            <Label fx:id="name" text="&lt;course name&gt;" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

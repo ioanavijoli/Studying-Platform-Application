@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="groupsVBox" onMousePressed="#onMousePressed" prefHeight="33.0" prefWidth="202.0" style="-fx-min-height: 40;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.StudyingPlatform.controllers.InboxRowController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="202.0">
+         <children>
+            <Label fx:id="name" text="DEFAULT NAME">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Line endX="101.29287719726562" startX="-100.0" strokeMiterLimit="100.0" />
+   </children>
+</VBox>
